@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    color: black;
+    background-size: cover;
+    position: relative;
+    transition: background-image 1s ease-in-out;
+    /* background-image: url("https://raw.githubusercontent.com/irinainina/ready-projects/momentum/momentum/assets/images/night/17.jpg");  */
+}
+
+#date {
+    font-size: 8rem;
+}
+
+#time{
+    font-size: 10rem;
+}
+
+h1 {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    border: 0;
+    background-size: contain;
+    background: url('../img/but.png');
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    filter: grayscale(1);
+    
+}
+
+.btn:hover {
+    filter: grayscale(.1);
+}
+
+.btn:active,
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+    #time {
+        font-size: 4rem;
+    }
+    #date {
+        font-size: 3rem;
+    }
+}
+
